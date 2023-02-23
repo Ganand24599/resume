@@ -1,0 +1,219 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+body{
+    background: palevioletred;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.condiner{
+    position:relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 200vh;
+    margin: 50px;
+    background: #fff;
+    display: grid;
+    grid-template-columns:1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0,0,0,0.8);
+}
+.condiner .left{
+    position: relative;
+    background: blue;
+    padding: 40px;
+}
+.protext{
+    position:relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid red;
+}
+img{
+    width: 80mm;
+    height: 80mm;
+    border-radius: 5mm;
+    box-shadow: 3mm 3mm 5mm rgb(0, 0, 0);
+    transition: all .5s ease-out;
+    cursor: pointer;
+}
+img:hover{
+    border-radius:50%;
+    box-shadow: 3mm 3mm 5mm rgb(255, 255, 255);
+}
+.protext.imgbx{
+    position: relative;
+    overflow: hidden;
+}
+.protext h2{
+    color: #fff;
+    font-size: 17mm;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height:7mm;
+}
+.protext h2 span{
+    color: rgba(0, 238, 255, 0.767);
+    font-family:Haettenschweiler;
+    font-size: 5mm;
+    font-weight: 900;
+}
+.info{
+    padding-top:30px;
+    font-family: 'Gill Sans';
+}
+.title{
+    color: aliceblue;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+.info ul{
+    position: relative;
+}
+.info ul li{
+    /* list-style:none ; */
+    position: relative;
+    margin: 10px 0;
+    cursor: pointer;
+}
+.info ul li span{
+    position: relative;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    font-size: 5mm;
+    font-weight: 500;
+}
+.info.education li{
+    margin-bottom: 10px;
+}
+.info.education h5{
+    color: rgb(36, 252, 7);
+    font-weight: 700;
+    font-size: 4MM
+}
+.info.education h4:nth-child(2){
+    color: rgb(255, 255, 255);
+    font-weight: 900;
+   
+}
+.info.education h4{
+    color: rgb(255, 255, 255);
+    font-weight: 300;
+}
+.info.Language ul{
+    list-style: none;
+}
+.info.Language .percent{
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background: red;
+    display: flex;
+    margin-top: 5px;
+}
+.info.Language .percent div{
+    position: absolute;
+    top: 0cm;
+    left: 0;
+    height: 100%;
+    background: rgb(240, 196, 0);
+}
+.condiner .right{
+    position: relative;
+    background: rgb(0, 255, 21);
+    padding: 40px;
+}
+.about{
+    margin-bottom: 20px;
+}
+.about h2{
+    color: blueviolet;
+    font-family:Cambria;
+    font-weight: 900;
+    font-size: 7mm;
+}
+.about:last-child{
+    margin-bottom: 0;
+}
+.title2{
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+.about .box{
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}
+.about .box .year_company{
+    min-width: 150px;
+}
+.about .box .year_company h5{
+    text-transform: uppercase;
+    color:#ffffff;
+    font-weight: 600;
+}
+.about .box .text h4{
+    text-transform: uppercase;
+    color: #ff0000;
+    font-size: 20px;
+}
+.skills .box{
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    justify-content: center;
+    align-items: center;
+}
+.skills .box h4{
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.548);
+    font-weight: 600;
+}
+.skills .box .percent{
+    position: relative;
+    width: 100%;
+    height: 20px;
+    background: #ff0000;
+    border-radius: 10px;
+}
+.skills .box .percent div{
+    position: absolute;
+    top: 0;
+    left: 0%;
+    height: 100%;
+    background: rgb(240, 196, 0);
+    border-radius: 10px;
+}
+.Interest ul {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.Interest ul li{
+    list-style: none;
+    color: brown;
+    font-weight: 900;
+    margin: 10px 0;
+}
+@media (max-width:1000px)
+{
+    .condiner{
+        margin: 10px;
+        grid-template-columns: 1,1fr;
+    }
+    .Interest ul{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
